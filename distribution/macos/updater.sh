@@ -23,8 +23,6 @@ error_handler() {
     end if
     """
 
-    echo "Error at line $lineno: $msg. Exit status: $exit_status." >> updater.log
-
     osascript -e "$script"
     exit 1
 }
